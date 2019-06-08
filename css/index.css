@@ -1,0 +1,116 @@
+html {
+    font-family: "Noto Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+    text-align: center;
+    margin: 15px 15%;
+    color: hsl(0, 0%, 30%);
+    font-size: 1.3em;
+}
+
+a {
+    cursor: pointer;
+    color: #46c284;
+    text-decoration: none;
+    transition: color 150ms;
+}
+
+a:hover {
+    color: #528da1;
+}
+
+h1, h2, h3, h4 {
+    margin: 0px;
+}
+
+section {
+    padding: 15px 0;
+}
+
+hr {
+    color: hsl(0, 0%, 90%);
+}
+
+.layout-wrapper {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.links {
+    padding: 35px;
+    margin: 0 5px;
+    border-right: 2px solid hsl(0, 0%, 80%);
+    color: hsl(0, 0%, 95%);
+}
+
+.page {
+    padding: 0 35px;
+}
+
+.page .page-title {
+    font-size: 3em;
+    color: #46c284;
+}
+
+.page .tech-section .tech-list-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.page .tech-section .tech-list {
+    text-align: left;
+    list-style-type: none;
+}
+
+.page .tech-section .tech-list li {
+    margin: 15px 0;
+}
+
+.devicon {
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+.devicon-nodejs-plain {
+    color: #3dad3d;
+}
+
+.devicon-go-plain {
+    color: #3199c2;
+}
+
+.devicon-vuejs-plain {
+    color: #42b883;
+}
+
+.devicon-webpack-plain {
+    color: #5f90a3;
+}
+
+.devicon-mysql-plain {
+    color: #da8057;
+}
+
+.devicon-redis-plain {
+    color: #c24a4a;
+}
+
+@media only screen and (max-width: 950px) {
+    body {
+        margin: 0 5px;
+        font-size: 1.1em;
+    }
+    
+    .layout-wrapper {
+        flex-flow: column nowrap;
+    }
+
+    .links {
+        border: none;
+    }
+
+    .links .link-image {
+        display: none;
+    }
+}
