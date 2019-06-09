@@ -3,13 +3,16 @@ html {
 }
 
 body {
-    text-align: center;
+    margin: 0;
+}
+
+.layout-wrapper {
     margin: 15px 15%;
     color: hsl(0, 0%, 30%);
     font-size: 1.3em;
 }
 
-a {
+a, .pseudo-link {
     cursor: pointer;
     color: #46c284;
     text-decoration: none;
@@ -32,38 +35,41 @@ hr {
     color: hsl(0, 0%, 90%);
 }
 
-.layout-wrapper {
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.links {
+.links-wrapper {
+    height: auto;
+    width: 160px;
+    position: fixed;
+    top: 3vh;
+    bottom: 3vh;
+    left: 0;
     padding: 35px;
-    margin: 0 5px;
+    margin: 0 0 0 100px;
     border-right: 2px solid hsl(0, 0%, 80%);
     color: hsl(0, 0%, 95%);
 }
 
-.page {
+.page-wrapper {
+    text-align: center;
+    margin: 0 0 0 160px;
     padding: 0 35px;
 }
 
-.page .page-title {
+.page-wrapper .page-title {
     font-size: 3em;
     color: #46c284;
 }
 
-.page .tech-section .tech-list-wrapper {
+.page-wrapper .tech-section .tech-list-wrapper {
     display: flex;
     justify-content: center;
 }
 
-.page .tech-section .tech-list {
+.page-wrapper .tech-section .tech-list {
     text-align: left;
     list-style-type: none;
 }
 
-.page .tech-section .tech-list li {
+.page-wrapper .tech-section .tech-list li {
     margin: 15px 0;
 }
 
@@ -96,6 +102,10 @@ hr {
     color: #c24a4a;
 }
 
+.github-link span {
+    display: block;
+}
+
 @media only screen and (max-width: 950px) {
     body {
         margin: 0 5px;
@@ -106,11 +116,22 @@ hr {
         flex-flow: column nowrap;
     }
 
-    .links {
-        border: none;
+    .page-wrapper {
+        margin: 0;
     }
 
-    .links .link-image {
-        display: none;
+    .links-wrapper {
+        border: none;
+        background: none;
+        height: unset;
+        width: auto;
+        position: static;
+        margin: 15px 0 0 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .links-wrapper .link-image {
+        width: 20px;
     }
 }
