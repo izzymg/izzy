@@ -120,17 +120,16 @@ hr {
 }
 
 @media only screen and (max-width: 950px) {
-    body {
-        margin: 0 5px;
-        font-size: 1.1em;
-    }
-    
+
     .layout-wrapper {
-        flex-flow: column nowrap;
+        font-size: 1.1em;
+        margin: 0;
+        padding: 0;
     }
 
     .page-wrapper {
         margin: 0;
+        padding: 0 30px;
     }
 
     .links-wrapper {
