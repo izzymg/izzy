@@ -6,6 +6,18 @@ body {
     margin: 0;
 }
 
+@keyframes slide-down {
+    0% {
+        transform: translateY(-400%);
+    }
+    5% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 .layout-wrapper {
     margin: 15px 15%;
     color: hsl(0, 0%, 30%);
@@ -36,6 +48,7 @@ hr {
 }
 
 .links-wrapper {
+    animation: slide-down 600ms;
     height: auto;
     width: 160px;
     position: fixed;
