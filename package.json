@@ -1,0 +1,23 @@
+{
+  "name": "izzy",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/izzymg/izzy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/izzymg/izzy/issues"
+  },
+  "homepage": "https://github.com/izzymg/izzy#readme",
+  "devDependencies": {
+    "rollup": "^1.27.14"
+  }
+}
