@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/izzymg/izzy#readme",
   "devDependencies": {
-    "rollup": "^1.27.14"
+    "rollup": "^1.27.14",
+    "rollup-plugin-livereload": "^1.0.4",
+    "rollup-plugin-serve": "^1.0.1"
   }
 }
