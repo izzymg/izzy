@@ -1,9 +1,12 @@
+/* Basic elements */
+
 body {
   margin: 0;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.25rem;
   text-align: center;
-  color: hsl(0, 0%, 15%);
+  background: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 12%);
 }
 
 h1, h2, h3, h4 {
@@ -11,14 +14,67 @@ h1, h2, h3, h4 {
   padding: 0;
 }
 
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3.5em;
+}
+
+h3 {
+  font-size: 3em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+a {
+  color: #4976be;
+  display: inline-block;
+  text-decoration: none;
+  border-bottom: 2px solid hsl(0, 0%, 95%);
+  transition: border ease-in-out 150ms;
+}
+
+a:hover {
+  border-bottom: 2px solid hsl(209, 24%, 50%);
+}
+
+a:visited {
+  color: #4976be;
+}
+
+header {
+  padding: 0.8em;
+}
+
+hr {
+  height: 3px;
+  margin: 2em 0;
+  background-color: rgba(123, 123, 126, 0.294);
+  border: none;
+}
+
+.subtitle {
+  opacity: 0.7;
+}
+
+.wrap-tight {
+  margin: 0 auto;
+  max-width: 65%;
+}
+
+/* Navbar */
 .navbar {
+  z-index: 10;
   display: flex;
   justify-content: space-between;
   padding: 0.8em;
   text-align: left;
-  background: rgb(66, 83, 116);
-  border-bottom: 1px solid hsl(0, 0%, 80%);
-  box-shadow: 0 0 3px 0 hsl(0, 0%, 41%);
+  
+  background: #4c5279;
   color: #fff;
 }
 
@@ -54,52 +110,49 @@ h1, h2, h3, h4 {
 }
 
 .smol-git {
-  width: 20px;
+  width: 1.3em;
   margin: 0 5px;
 }
 
-a {
-  color: #4976be;
-  display: inline-block;
-  text-decoration: none;
-  border-bottom: 2px solid hsl(0, 0%, 95%);
-  transition: border ease-in-out 150ms;
+/* Sections */
+
+.title-section {
+  padding: 5em 0;
+  background: hsl(0, 0%, 12%);
+  color: hsl(0, 0%, 100%);
 }
 
-a:hover {
-  border-bottom: 2px solid hsl(209, 24%, 50%);
+.big-title {
+  font-size: 6.5em;
 }
 
-a:visited {
-  color: #4976be;
+@keyframes tagline {
+  from {
+    color: #47436e;
+  }
+  to {
+    color: #ad4f57;
+  }
 }
 
-#wrap {
-  margin: 0 auto;
-  max-width: 65%;
+.title-tagline::before, .title-tagline::after {
+  animation: 2s infinite alternate tagline;
 }
 
-header {
-  padding: 0.5em;
-  font-size: 3.9em;
+.title-tagline::before { content: "{"; }
+.title-tagline::after { content: "}"; }
+
+/* Tech section */
+.tech-section {
+  padding: 5em 0;
+  background: #2a2731;
+  color: hsl(0, 0%, 97%);
 }
 
-section {
-  margin-bottom: 3em;
+/* Experience section */
 
-}
-
-.title {
-  font-size: 1em;
-}
-
-.subtitle {
-  font-size: 0.3em;
-  color: hsl(0, 0%, 25%);
-}
-
-.section-header {
-  font-size: 2em;
+.exp-section {
+  padding: 5em 0;
 }
 
 .exp-list {
@@ -108,7 +161,6 @@ section {
 
 .exp-list h4 {
   font-weight: normal;
-  font-size: 1.2em;
 }
 
 .exp-list li {
@@ -117,10 +169,14 @@ section {
 
 @media (max-width: 850px) {
   body {
-    font-size: 0.8rem;
-    padding: 4px;
+    font-size: 0.85rem;
   }
-  #wrap {
-    max-width: 100%;
+
+  .big-title {
+    font-size: 5em;
+  }
+
+  .wrap-tight {
+    max-width: 70%;
   }
 }
