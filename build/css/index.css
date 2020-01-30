@@ -159,15 +159,17 @@ hr {
 .devicon-postgresql-plain { fill: #7551eb; }
 
 .tech-projects .project-wrapper {
+  margin: 1em 0;
   display: grid;
-  row-gap: 3%;
+  row-gap: 0.3em;
+  column-gap: 0.3em;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .tech-projects .project-wrapper .project {
   background: hsla(0, 0%, 100%, 0.05);
   border: none;
   padding: 0.3em;
-  box-shadow: -10px -10px 40px hsla(0, 0%, 1%, 0.171) inset;
   transition: border-bottom 0.3s;
   transition: background 0.3s;
 }
@@ -178,7 +180,7 @@ hr {
 }
 
 .tech-projects .project-wrapper .project h4 {
-  color: #c7595e;
+  color: #d4d3d3;
   font-size: 1.3em;
 }
 
