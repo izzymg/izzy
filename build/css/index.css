@@ -150,16 +150,13 @@ hr {
   color: hsl(0, 0%, 97%);
 }
 
-.tech-list {
-  font-size: 5em;
-}
-
-.devicon-go-plain { color: #5ba6c8; }
-.devicon-typescript-plain { color: #4950ad; }
-.devicon-javascript-plain { color: #e4de8a; }
-.devicon-html5-plain { color: #eb7551; }
-.devicon-redis-plain { color: #f6252f; }
-.devicon-postgresql-plain { color: #7551eb; }
+.devicon { width: 5em; padding: 0.4em; }
+.devicon-go-plain { fill: #5ba6c8; }
+.devicon-typescript-plain { fill: #4950ad; }
+.devicon-javascript-plain { fill: #e4de8a; }
+.devicon-html5-plain { fill: #eb7551; }
+.devicon-redis-plain { fill: #f6252f; }
+.devicon-postgresql-plain { fill: #7551eb; }
 
 .tech-projects .project-wrapper {
   display: grid;
