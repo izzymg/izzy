@@ -3,7 +3,7 @@
 body {
   margin: 0;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   text-align: center;
   background: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 12%);
@@ -71,10 +71,11 @@ hr {
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  padding: 0.8em;
+  padding: 0.5em;
+  font-size: 1.2em;
   text-align: left;
   
-  background: #4c5279;
+  background: #292a2c;
   color: #fff;
 }
 
@@ -128,7 +129,7 @@ hr {
 
 @keyframes tagline {
   from {
-    color: #47436e;
+    color: #6e4c43;
   }
   to {
     color: #ad4f57;
@@ -159,6 +160,35 @@ hr {
 .devicon-html5-plain { color: #eb7551; }
 .devicon-redis-plain { color: #f6252f; }
 .devicon-postgresql-plain { color: #7551eb; }
+
+.tech-projects .project-wrapper {
+  display: grid;
+  row-gap: 3%;
+}
+
+.tech-projects .project-wrapper .project {
+  background: hsla(0, 0%, 100%, 0.05);
+  border: none;
+  padding: 0.3em;
+  box-shadow: -10px -10px 40px hsla(0, 0%, 1%, 0.171) inset;
+  transition: border-bottom 0.3s;
+  transition: background 0.3s;
+}
+
+.tech-projects .project-wrapper .project:hover {
+  background: hsla(0, 0%, 35%, 0.05);
+
+}
+
+.tech-projects .project-wrapper .project h4 {
+  color: #c7595e;
+  font-size: 1.3em;
+}
+
+.tech-projects .project-wrapper .project p {
+  font-size: 0.9em;
+  color: hsl(0, 0%, 94%);
+}
 
 /* Experience section */
 
