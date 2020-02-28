@@ -5,7 +5,7 @@ body {
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, sans-serif;
   font-size: 1.15rem;
   text-align: center;
-  background: hsl(0, 0%, 100%);
+  background: hsl(27, 14%, 88%);
   color: hsl(0, 0%, 12%);
 }
 
@@ -34,7 +34,7 @@ a {
   color: #4976be;
   display: inline-block;
   text-decoration: none;
-  border-bottom: 2px solid hsl(0, 0%, 95%);
+  border-bottom: 2px solid hsl(0, 0%, 51%);
   transition: border ease-in-out 150ms;
 }
 
@@ -75,7 +75,7 @@ hr {
   font-size: 1.2em;
   text-align: left;
   
-  background: #292a2c;
+  background: #2a2731;
   color: #fff;
 }
 
@@ -89,7 +89,7 @@ hr {
   line-height: 3em;
   margin: 0 5px;
   cursor: pointer;
-  border-bottom: 2px solid hsl(0, 0%, 95%);
+  border-bottom: 2px solid hsla(0, 0%, 95%, 0.493);
   transition: border ease-in-out 150ms;
 }
 
@@ -119,8 +119,8 @@ hr {
 
 .title-section {
   padding: 5em 0;
-  background: hsl(0, 0%, 12%);
-  color: hsl(0, 0%, 100%);
+  background: hsl(27, 14%, 88%);
+  color: hsl(0, 0%, 23%);
 }
 
 .big-title {
@@ -139,9 +139,6 @@ hr {
 .title-tagline::before, .title-tagline::after {
   animation: 2s infinite alternate tagline;
 }
-
-.title-tagline::before { content: "{"; }
-.title-tagline::after { content: "}"; }
 
 /* Tech section */
 .tech-section {
@@ -167,7 +164,7 @@ hr {
 }
 
 .tech-projects .project-wrapper .project {
-  background: hsla(0, 0%, 100%, 0.05);
+  background: hsl(0, 18%, 80%);
   border: none;
   padding: 0.3em;
   transition: border-bottom 0.3s;
@@ -175,18 +172,17 @@ hr {
 }
 
 .tech-projects .project-wrapper .project:hover {
-  background: hsla(0, 0%, 35%, 0.05);
-
+  background: hsl(0, 10%, 69%);
 }
 
 .tech-projects .project-wrapper .project h4 {
-  color: #d4d3d3;
   font-size: 1.3em;
+  color: hsl(0, 18%, 23%);
 }
 
 .tech-projects .project-wrapper .project p {
   font-size: 0.9em;
-  color: hsl(0, 0%, 94%);
+  color: hsl(0, 18%, 18%);
 }
 
 /* Experience section */
