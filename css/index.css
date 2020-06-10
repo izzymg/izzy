@@ -1,0 +1,147 @@
+:root {
+    font-family: "Cambay", Helvetica, sans-serif;
+}
+
+/* Element styles */
+
+body {
+    margin: 0;
+    color: hsl(0, 0%, 14%);
+}
+
+body.dark {
+    color: #fff;
+    background: hsl(0, 0%, 14%);
+}
+
+h1, h2, h3, h4, p {
+    margin: 0;
+    font-weight: normal;
+}
+
+h1, h2 {
+    color: hsl(0, 0%, 0%);
+}
+
+.dark h1, .dark h2, .dark h3 {
+    color: #fff;
+}
+
+h3 {
+    color: hsl(0, 0%, 18%);
+    font-size: 2.1em;
+}
+
+a {
+    color: hsl(212, 27%, 55%);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.1em;
+}
+
+a:hover {
+    border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+/* Responsive page flow */
+
+.tight-wrap {
+    width: 65%;
+    margin: 0 auto;
+}
+
+@media(max-width: 500px) {
+    .tight-wrap {
+        width: 99%;
+    }
+}
+
+/* Specific content */
+
+.lined-title {
+    cursor: pointer;
+}
+
+.lined-title::after {
+    content: " ";
+    display: block;
+    border: 2px solid hsl(120, 20%, 69%);
+    width: 100px;
+    margin: 20px 0;
+
+    transition: border ease-in-out 100ms;
+}
+
+.lined-title:hover::after {
+    border: 2px solid hsl(120, 20%, 50%);
+}
+
+.tiny-title {
+    font-size: 1.2em;
+    margin: 10px 0 0 10px;
+}
+
+.tiny-title::before {
+    content: ":: ";
+}
+
+.page-title {
+    font-size: 4.1em;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.page-subtitle {
+    font-size: 2.8em;
+    text-align: center;
+}
+
+.about {
+    padding: 1em 0;
+}
+
+.do, .links {
+    background: hsl(0, 0%, 99%);
+    border: 1px solid hsl(0, 0%, 91%);
+    box-shadow: 2px 2px 40px 8px hsl(240, 8%, 90%);
+    margin: 1em 4em;
+    padding: 1.5em 0;
+}
+
+.dark .do, .dark .links {
+    background: hsl(0, 0%, 9%);
+    box-shadow: none;
+    border: 1px solid hsl(0, 0%, 20%);
+}
+
+@media(max-width: 500px) {
+    .do, .links {
+        margin: 1em 10px;
+        padding: 15px;
+    }
+}
+
+.dark-wrap {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+#dark-switch {
+    border: none;
+    box-shadow: none;
+    padding: 1em;
+    cursor: pointer;
+
+    transition: background 250ms;
+    background: hsl(0, 0%, 18%);
+    color: #fff;
+
+    border-radius: 4px;
+
+    outline: none;
+}
+
+#dark-switch:hover {
+    background: hsl(0, 0%, 25%);
+}
