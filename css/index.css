@@ -58,6 +58,40 @@ a:hover {
 
 /* Specific content */
 
+#blink-bar {
+    display: inline-block;
+    background: black;
+    width: 2px;
+    height: 1em;
+    vertical-align: middle;
+
+    animation: cursor 1s infinite;
+}
+
+#title-input {
+    height: 4.1em;
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid hsl(0, 0%, 14%);
+    outline: none;
+    font-size: 1.1rem;
+}
+
+@keyframes cursor {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .intro {
     text-align: center;
 }
