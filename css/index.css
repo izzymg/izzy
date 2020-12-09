@@ -78,6 +78,18 @@ a:hover {
     font-size: 1.1rem;
 }
 
+@keyframes blocksintro {
+    from {
+        /* margin-top: 100%; */
+        opacity: 0;
+    }
+
+    to {
+        /* margin-top: 1.5em; */
+        opacity: 1;
+    }
+}
+
 @keyframes cursor {
     0% {
         opacity: 0;
@@ -127,11 +139,18 @@ a:hover {
     font-size: 4.1em;
     text-align: center;
     padding: 1rem 0;
+
 }
 
 .page-subtitle {
     font-size: 2.8em;
     text-align: center;
+    background: #e5e6e5;
+    padding: 0.5em 0;
+}
+
+.dark .page-subtitle {
+    background: #2a2c2a;
 }
 
 .about {
@@ -142,8 +161,16 @@ a:hover {
     background: hsl(0, 0%, 99%);
     border: 1px solid hsl(0, 0%, 91%);
     box-shadow: 2px 2px 40px 8px hsl(240, 8%, 90%);
-    margin: 1em 4em;
+    margin: 1em 20%;
     padding: 1.5em 0;
+}
+
+.do {
+    animation: blocksintro 200ms ease-in;
+}
+
+.links {
+    animation: blocksintro 450ms ease-in;
 }
 
 .dark .do, .dark .links {
@@ -152,7 +179,7 @@ a:hover {
     border: 1px solid hsl(0, 0%, 20%);
 }
 
-@media(max-width: 500px) {
+@media(max-width: 650px) {
     .do, .links {
         margin: 1em 10px;
         padding: 15px;
