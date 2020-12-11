@@ -33,7 +33,7 @@ h3 {
 }
 
 a {
-    color: hsl(212, 27%, 55%);
+    color: hsl(212deg 65% 33%);
     text-decoration: none;
     cursor: pointer;
     font-size: 1.1em;
