@@ -2,6 +2,17 @@
     font-family: "Cambay", Helvetica, sans-serif;
 }
 
+/* cambay-regular - latin */
+@font-face {
+    font-family: "Cambay";
+    font-style: normal;
+    font-weight: 400;
+    src: local(""),
+         url("../fonts/cambay-v7-latin-regular.woff2") format('woff2'),
+         url("../fonts/cambay-v7-latin-regular.woff") format('woff');
+  }
+  
+
 /* Element styles */
 
 body {
