@@ -1,13 +1,28 @@
-/* Persistent dark theme. IzzyMG */
-
 const DARK_STORAGE_KEY = "isDark";
 const DARK_CLASS = "dark";
+
+/* Turns title into a little text input */
+function titleInputInit() {
+  const normTitle = document.querySelector("#norm-title");
+  const inputTitle = document.querySelector("#input-title");
+  const input = document.querySelector("#title-input");
+
+  document.querySelector(".title-wrap").addEventListener("click", function() {
+    normTitle.hidden = !normTitle.hidden;
+    inputTitle.hidden = !inputTitle.hidden;
+
+    if(!inputTitle.hidden) {
+        input.focus();
+    }
+  });
+}
 
 function getSwitchText(isDark) {
     return isDark ? "Light Mode" : "Dark Mode";
 }
 
-function init() {
+/** Persistent dark theme. */
+function darkThemeInit() {
     let isDark = localStorage.getItem(DARK_STORAGE_KEY) ? true : false;
 
     const switchButton = document.querySelector("#dark-switch");
@@ -35,4 +50,5 @@ function init() {
     onUpdate();
 }
 
-init();
+titleInputInit();
+darkThemeInit();
