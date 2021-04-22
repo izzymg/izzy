@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Izzy MG - NZ based e-learning specialist">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -16,7 +16,7 @@
     <header>
         <div class="title-wrap">
             <h1 id="norm-title" class="page-title">Izzy :: MG > <span id="blink-bar"></span></h1>
-            <h1 hidden id="input-title" class="page-title"><input type="text" id="title-input"></h1>
+            <h1 hidden id="input-title" class="page-title"><input placeholder="secret" type="text" id="title-input"></h1>
         </div>
         <h2 class="page-subtitle">web, e-learning, code</h2>
     </header>
@@ -25,14 +25,19 @@
     </div>
     <main>
         <section class="intro">
-            <p class="about tight-wrap">
-                Hello! I'm an NZ based web dev and e-learning specialist.
+            <div class="img-wrap">
+                <img srcset=
+                    "img/te-anau-1000w.jpg 1000w, img/te-anau-500w.jpg 500w"
+                    sizes="(max-width: 900px) 500px, 1000px"
+                    src="img/te-anau-1000w.jpg"
+                    alt="Te Anau, New Zealand">
+            </div>
+            <p class="about">
+                Hi! I'm a New Zealand based web developer and e-learning specialist.
                 <br>
-                I deal with learning management systems and web development, especially
-                through the lens of online learning and accessibility.
-            </p>
-            <p class="blog-find tight-wrap">
-                <s>You can find my writings & logs <a href="https://blog.izzymg.dev">here</a>.</s> Currently under maintenance!
+                I deal with learning management systems and the web through the lens of online learning and accessibility.
+                I'm highly fluent in Javascript, with complimenting skills in several other back-end programming languages,
+                and a very solid understanding of broader web protocols.
             </p>
         </section>
 
@@ -43,16 +48,16 @@
                 </h3>
                 <p>
                     Prior to administrating the wonderful <a href="https://www.totaralearning.com/">Totara</a> LMS for a global
-                    e-learning provider, I have worked with Moodle for the Learning & Teaching Development team at Otago Polytechnic.
+                    e-learning provider, I have worked with <a href="https://www.moodle.org/">Moodle</a> for the Learning & Teaching Development team at Otago Polytechnic.
 
-                    I've also previously improved accessibility of the content delivered by Future Skills Academy courses.
+                    I've also previously improved accessibility of the content & media delivered by Future Skills Academy.
                 </p>
             </div>
         </section>
         <section class="links">
             <div class="tight-wrap">
                 <h3 class="lined-title">
-                    My things
+                    Where else to find me
                 </h3>
                 <h4 class="tiny-title">Email</h4>
                 <a class="plug" href="mailto:izzymhg@gmail.com">izzymhg@gmail.com</a>
@@ -60,11 +65,6 @@
                 <a class="plug" href="https://github.com/izzymg">izzymg</a>
                 <p>
                     Some of my developed tools and projects in various programming languages can be found here.
-                </p>
-                <h4 class="tiny-title">Writeups, Devlog</h4>
-                <a class="plug" href="https://blog.izzymg.dev">blog.izzymg.dev</a>
-                <p>
-                    Occasionally I write about stuff I think is cool.
                 </p>
             </div>
         </section>

@@ -27,6 +27,12 @@ body.dark {
     background: hsl(0, 0%, 14%);
 }
 
+body.rainbow {
+    animation: rainbow 5s ease infinite;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #07ff14, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+}
+
 h1, h2, h3, h4, p {
     margin: 0;
     font-weight: normal;
@@ -91,6 +97,12 @@ a:hover {
     font-size: 1.1rem;
 }
 
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+
 @keyframes blocksintro {
     from {
         /* margin-top: 100%; */
@@ -118,7 +130,31 @@ a:hover {
 }
 
 .intro {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .img-wrap, .intro .about {
+    padding: 1em;
+}
+
+.intro .img-wrap img {
+    max-width: 100%;
+}
+
+.intro .about {
+    font-size: 1.1em;
+    flex-basis: 50%;
     text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+    .intro {
+        flex-direction: column;
+    }
 }
 
 .lined-title {

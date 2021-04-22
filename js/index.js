@@ -7,12 +7,22 @@ function titleInputInit() {
   const inputTitle = document.querySelector("#input-title");
   const input = document.querySelector("#title-input");
 
+	input.addEventListener("input", function() {
+		if(this.value === "secret") {
+			document.body.classList.add("rainbow");
+			this.value = "";
+			setTimeout(() => {
+				document.body.classList.remove("rainbow");
+			}, 3000)
+		}
+	});
+
   document.querySelector(".title-wrap").addEventListener("click", function() {
     normTitle.hidden = !normTitle.hidden;
     inputTitle.hidden = !inputTitle.hidden;
 
     if(!inputTitle.hidden) {
-        input.focus();
+			input.focus();
     }
   });
 }
